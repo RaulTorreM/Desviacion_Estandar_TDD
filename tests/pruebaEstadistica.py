@@ -54,3 +54,19 @@ class PruebaEstadistica(unittest.TestCase):
 
             # Assert
             self.assertAlmostEqual(resultadoActual, resultadoEsperado, places=3)
+
+
+
+    # TESTS D.E.
+    def test_desviacionEstandar_vacio_retornaExcepcion(self):
+
+
+    def test_desviacionEstandar_noNumero_retornaExcepcion(self):
+
+
+    def test_desviacionEstandar_nNumeros_retornaDesviacionEstandar(self):
+        # Arrange
+
+
+    def test_desviacionEstandar_nCasosNumeros_retornaDesviacionEstandar(self):
+        # Arrange

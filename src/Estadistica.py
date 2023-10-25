@@ -35,7 +35,7 @@ class Estadistica:
         suma = 0
         for valor in self.__numeros:
             suma += (valor - media) ** 2
-        radicando = suma / (len(self.__numeros) - 1)
+        radicando = suma / (len(self.__numeros))
         return sqrt(radicando)
 
     def calcular_media(self):
@@ -46,18 +46,3 @@ class Estadistica:
             return suma / len(self.__numeros)
         else:
             raise ExceptionDatos
-
-    def __str__(self):
-        return self.__numeros
-
-
-if __name__ == "__main__":
-    try:
-        datos = [7, 3, 13, 17, 10, 8, 12, 9]
-        estadistica = Estadistica(datos)
-        print(estadistica.numeros)
-        estadistica.numeros = [7, 3, 13]
-        print(estadistica.numeros)
-        print(estadistica.desviacion_estandar())
-    except ExceptionDatos:
-        print("Sin datos")
